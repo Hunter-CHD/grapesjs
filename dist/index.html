@@ -5,6 +5,7 @@
     <title>GrapesJS</title>
     <link rel="stylesheet" href="css/grapes.min.css">
     <script src="grapes.min.js"></script>
+    <script src="plugins/grapesjs-custom-code.min.js"></script>
     <style>
       body,
       html {
@@ -114,6 +115,11 @@
             }
           ],
         },
+        plugins: ['grapesjs-custom-code'],
+        pluginsOpts: {
+          'grapesjs-custom-code': {
+          }
+        }
       });
 
       editor.BlockManager.add('testBlock', {
